@@ -15,7 +15,7 @@ const Position: React.FC<IPosition> = ({
 
     const initDescrip = () => {
         let _descrip: JSX.Element[] = [];
-        descriptionList.map((val, index) => {
+        descriptionList.map((val: string, index: number) => {
             _descrip.push(<p>{val}</p>)
         })
         setDescripList(_descrip);

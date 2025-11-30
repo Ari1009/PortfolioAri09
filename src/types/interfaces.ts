@@ -78,6 +78,15 @@ export interface IContact{
 }
 
 
+export interface IPosition{
+    role: string,
+    division: string,
+    organisation: string,
+    positionPeriod: string,
+    descriptionList: string[]
+}
+
+
 // app and reducer states
 export interface AppState{
     env: IEnvState,
@@ -86,6 +95,9 @@ export interface AppState{
 
 export interface IDataState{
     stats: IStats,
+    experience: {
+        positionList: IPosition[]
+    },
     projects: IProject[],
     achievements: {
         awards: IAchievement[]
